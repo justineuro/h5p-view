@@ -3,7 +3,7 @@
 This bash script 
 
 * needs a `-f` option to indicate the H5P filename to be viewed/played;
-* needs a `-s` option to indicate whether php or python is used for runninng the server (python or php) via the `-s` option; and 
+* needs a `-s` option to indicate whether php or python is used for runninng the server (python or php); and 
 * creates a temporary folder (`/tmp/h5ptemp`), as a server root directory from which it is run.
 
 (The server is started either as `php -S http://0.0.0.0:8000` or `python -m http.server`.)
