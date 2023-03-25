@@ -70,9 +70,9 @@ EOT
 # start server at 0.0.0.0:8000 either using PHP or Python
 case $SERVER in
 python) 
-	python -m http.server 8000;;
+	python -m http.server;;
 php) 
-	php -S http://0.0.0.0:8000;;
+	php -S 0.0.0.0:8000;;
 esac
 
 # Pless Ctrl-C at the linux terminal in which the server is run 
