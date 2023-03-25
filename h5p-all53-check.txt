@@ -1,0 +1,161 @@
+H5Ps All (53)
+
+Accordion (accordion-6-7138.h5p)														OKAY
+Create vertically stacked expandable items
+
+Advent Calendar (beta) (advent-blue-snowman-1075566.h5p)		OKAY
+Create an advent calendar
+
+Agamotto (agamotto-80158.h5p)																OKAY
+Create a sequence of images that gradually change
+
+AR Scavenger (berry-hunt-1256174.h5p)												(???)
+Augmented reality fun!
+
+Arithmetic Quiz (arithmetic-quiz-22-57860.h5p)							OKAY
+Create time-based arithmetic quizzes
+
+Audio Recorder (audio-recorder-142-1214919.h5p)							(???)
+Create an audio recording
+
+Chart (chart-7143.h5p)																			OKAY
+Quickly generate bar and pie charts
+
+Collage (collage-3065.h5p)																	OKAY
+Create a collage of multiple images
+
+Column (h5p-column-34794.h5p)																OKAY
+Column layout for H5P Content
+
+Cornell Notes (the-cornell-note-taking-system-1255983.h5p)	OKAY
+Take notes using the Cornell system
+
+Crossword (example-content-crossword-1209160.h5p)						OKAY
+Create a crossword puzzle
+
+Dialog Cards (dialog-cards-620.h5p)													(???)
+Create text-based turning cards
+
+Dictation (dictation-389727.h5p)														OKAY
+Create a dictation with instant feedback
+
+Documentation Tool (documentation-tool-3022.h5p)						OKAY
+Create a form wizard with text export
+
+Drag and Drop (drag-and-drop-712.h5p)												OKAY
+Create drag and drop tasks with images
+
+Drag the Words (drag-the-words-1399.h5p)										OKAY
+Create text-based drag and drop tasks
+
+Essay (essay-4-166755.h5p)																	OKAY
+Create essay with instant feedback
+
+Fill in the Blanks (fill-in-the-blanks-837.h5p)							OKAY
+Create a task with missing words in a text
+
+Find Multiple Hotspots (image-multiple-hotspot-question-65081.h5p)	OKAY
+Create many hotspots for users to find
+
+Find the Hotspot (find-the-hotspot-3024.h5p)								OKAY
+Create image hotspot for users to find
+
+Find the words (example-content-find-the-words-557697.h5p)	OKAY
+Grid word search game
+
+Flashcards (flashcards-51-111820.h5p)												OKAY
+Create stylish and modern flashcards
+
+Guess the Answer (guess-the-answer-2402.h5p)								OKAY
+Create an image with a question and answer button
+
+Iframe Embedder (iframe-embedder-621.h5p)										OKAY
+Embed from a url or a set of files
+
+Image Choice (example-content-image-choice-1209180.h5p)		OKAY
+Create a task were the alternatives are images
+
+Image Hotspots (image-hotspots-2-825.h5p)									OKAY
+Create an image with multiple info hotspots
+
+Image Juxtaposition (image-juxtaposition-65047.h5p)				OKAY
+Create interactive images
+
+Image pairing (example-content-image-pairing-2-233382.h5p)	OKAY
+Drag and drop image matching game
+
+Image Sequencing (image-sequencing-3-110117.h5p)						OKAY
+Place images in the correct order
+
+Image Slider (image-slider-2-130336.h5)											OKAY
+Easily create an Image Slider
+
+Impressive Presentation (ALPHA) (impressive-presentation-7141add.h5p)
+*** Add FontAwesome-4.5 folder															OKAY
+Create a slideshow with parallax effects
+
+Information Wall (berries-95-1349799.h5p)					OKAY
+Create searchable information panels
+
+Interactive Book (berries-28-441940.h5p)					OKAY
+Create courses, books or tests
+
+KewAr Code
+Create QR codes for different purposes
+
+Mark the Words b(mark-the-words-2-1408.h5p)				OKAY
+Create a task where users highlight words
+
+Memory Game (memory-game-5-708.h5p)								OKAY
+Create the classic image pairing game
+
+Multiple Choice (multiple-choice-713.h5p)					OKAY
+Create flexible multiple choice questions
+
+Personality Quiz (personality-quiz-21254.h5p)			OKAY
+Create personality quizzes
+
+Questionnaire (questionnaire-4-30615.h5p)					(???)
+Create a questionnaire to receive feedback
+
+Quiz (Question Set)		(question-set-616.h5p)			OKAY
+Create a sequence of various question types
+
+Single Choice Set (single-choice-set-1515.h5p)		OKAY
+Create questions with one correct answer
+
+Sort the Paragraphs (example-content-sort-paragraphs-1209169.h5p)	OKAY
+Create a set of paragraphs to be sorted
+
+Speak the Words (speak-the-words-73595.h5p)										OKAY
+Answer a question using your voice
+
+Speak the Words Set (speak-the-words-set-example-120784.h5p)	OKAY
+A series of questions answered by speech
+
+Structure Strip (structure-strip-demo-1256274.h5p)						OKAY
+Interactive structure strip
+
+Summary (summary-714.h5p)																			OKAY
+Create tasks with a list of statements
+
+Timeline (timeline-3-716.h5p)																	OKAY
+Create a timeline of events with multimedia
+
+True/False Question (true-false-question-34806.h5p)						OKAY
+Create True/False questions
+
+Virtual Tour (360) (example-content-virtual-tour-360-441814.h5p)	OKAY
+Create interactive 360 environments
+
+Complex fill the blanks (advanced-blanks-example-1-503253.h5p)	OKAY
+Fill in the missing words
+
+Interactive Video (interactive-video-2-618.h5p)									OKAY
+Create videos enriched with interactions
+
+Course Presentation (collage-3065.h5p)													OKAY
+Create a presentation with interactive slides
+
+Branching Scenario (branching-no-content-13.h5p)								OKAY
+Create dilemmas and self paced learning

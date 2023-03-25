@@ -1,0 +1,7 @@
+#!/bin/bash
+echo -e "Please enter the list of all the H5Ps (allH5Ps.txt):"
+read infile
+while read f; do
+	echo $f
+	./h5p-play -f $f -s php
+done < $infile
