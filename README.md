@@ -16,7 +16,7 @@ To use,
 ```bash
 ./h5p-view -f <name-of-H5P-file> -s <server starter: python or php>
 ```
-* Point your browser at https://0.0.0.0:8000 to play the H5P.
+* Point your browser at `http://0.0.0.0:8000` to play the H5P.
 
 For example, to play the [H5P Quiz (Question Set) example](https://h5p.org/question-set) from the [Examples and Downloads](https://h5p.org/content-types-and-applications) page at https://h5p.org and use `python -m http.server` to start the server:
 ```bash
