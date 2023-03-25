@@ -1,1 +1,83 @@
-h5p-view
+#!/bin/bash
+#===================================================================================
+#
+#	 				FILE:	h5p-play
+#
+#					USAGE:	h5p-play -f <h5p-FILEname> -s <SERVER initiator: python or php>
+#		
+#						Example:	e.g. h5p-play -f question-set-616.h5p -s php
+#											e.g. h5p-play -f question-set-616.h5p -s python
+#
+# DESCRIPTION:	Used as an H5P file player/viewer at a linux command line.  
+#								After the command is issued, a temporary directory 
+#								(/tmp/h5ptemp/h5p) is created and a server is started 
+#								(using either python or php) at port 8000.  The  temporary 
+#               folder created serves as the root directory for the server. 
+#								Ctrl-C stops the server and erases the temporary files.
+#								This uses h5p-standalone (by https://github.com/tunapanda) 
+#								which is an essential need for this script to work.
+#
+#      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
+#     VERSION:	0.0.0
+#     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
+#     CREATED:	2023/03/25 13:33:55
+#    REVISION:	
+#==================================================================================
+
+# parse through the issued command to get 
+# the h5p filename and type of server
+while getopts ":f:s:" flag; do
+	case $flag in
+		f)
+			FILE=$OPTARG;;
+		s)
+			SERVER=$OPTARG;;
+	esac
+done
+
+# create the temporary folder: /tmp/h5temp
+# ensure it is an empty folder then extract the contents of the 
+# h5p file into this folder
+if [ -d /tmp/h5ptemp ]; then 
+	rm -fr /tmp/h5ptemp 
+fi
+mkdir -p /tmp/h5ptemp/h5p
+unzip $FILE -d /tmp/h5ptemp/h5p >/dev/null
+# make a soft link from the h5p-standalone dist file to /tmp/h5ptemp;
+# the dist dir should already be in the directory from which you are 
+# running this script
+DIST=$PWD/dist
+ln -s $DIST /tmp/h5ptemp
+
+# change directory to /tmp/h5ptemp, the root directory of the server,
+# then create an index.html file giving instructions of how to play
+# the h5p file (see h5p-standalone documentation)
+cd /tmp/h5ptemp
+cat > index.html << EOT
+<div id='h5p-container'></div>
+<script type="text/javascript" src="dist/main.bundle.js"></script>
+<script type="text/javascript">
+const el = document.getElementById('h5p-container');
+const options = {
+	h5pJsonPath:  'h5p',
+	frameJs: 'dist/frame.bundle.js',
+	frameCss: 'dist/styles/h5p.css',
+}
+new H5PStandalone.H5P(el, options);
+</script>
+EOT
+
+# start server at 0.0.0.0:8000 either using PHP or Python
+case $SERVER in
+python) 
+	python -m http.server 8000;;
+php) 
+	php -S http://0.0.0.0:8000;;
+esac
+
+# Pless Ctrl-C at the linux terminal in which the server is run 
+# to stop the server
+
+# remove the temporary directory when done playing/viewing the h5p file
+rm -fr /tmp/h5ptemp 
+cd $OLDPWD

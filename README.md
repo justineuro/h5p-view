@@ -6,7 +6,7 @@ This bash script
 * needs a `-s` option to indicate whether php or python is used for runninng the server (python or php); and 
 * creates a temporary folder (`/tmp/h5ptemp`), as a server root directory from which it is run.
 
-(The server is started either as `php -S http://0.0.0.0:8000` or `python -m http.server`.)
+(The server is started either as `php -S 0.0.0.0:8000` or `python -m http.server`.)
 
 ## Instructions on use
 To use,
