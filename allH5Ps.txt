@@ -41,7 +41,6 @@ mark-the-words-2-1408.h5p
 memory-game-5-708.h5p
 multiple-choice-713.h5p
 personality-quiz-21254.h5p
-quadratic-equation-sum-of-the-roots-12.h5p
 questionnaire-4-30615.h5p
 question-set-616.h5p
 single-choice-set-1515.h5p
