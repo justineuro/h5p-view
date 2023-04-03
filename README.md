@@ -13,13 +13,13 @@ To use,
 
 * Clone this repository: `git clone https://github.com/justineuro/h5p-view.git`
 * At a linux command line within your `h5p-view` directory issue the command:
-```bash
+```sh
 ./h5p-view -f <name-of-H5P-file> -s <server starter: python or php>
 ```
 * Point your browser at `http://0.0.0.0:8000` to play the H5P.
 
 For example, to play the [H5P Quiz (Question Set) example](https://h5p.org/question-set) from the [Examples and Downloads](https://h5p.org/content-types-and-applications) page at https://h5p.org and use `python -m http.server` to start the server:
-```bash
+```sh
 ./h5p-view -f question-set-616.h5p -s python
 ```
 The H5P can now be played at `http://0.0.0.0:8000`. 
@@ -37,4 +37,4 @@ This folder includes (among others):
 * [`h5p-view-all`](./h5p-view-all) - a bash script that allows you to play all the 53 H5P examples in this repository; simply use `Ctrl-C` at the command line to end the current example and restart the server for the next H5P example in this directory.  
 ![](./h5p-play-all-shot.png)
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">h5p-view</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/justineuro/" property="cc:attributionName" rel="cc:attributionURL">Justine Leon A. Uro</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/justineuro/h5p-misc-math-001" rel="dct:source">https://github.com/justineuro/h5p-view</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">h5p-view</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/justineuro/" property="cc:attributionName" rel="cc:attributionURL">Justine Leon A. Uro</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/justineuro/h5p-view" rel="dct:source">https://github.com/justineuro/h5p-view</a>.
