@@ -3,6 +3,9 @@ H5Ps All (53)
 Accordion (accordion-6-7138.h5p)														OKAY
 Create vertically stacked expandable items
 
+Advanced Fill in the Blanks Tutorial (advanced-fill-the-blanks-41-1026350.h5p)	OKAY
+Fill in the missing words
+
 Advent Calendar (beta) (advent-blue-snowman-1075566.h5p)		OKAY
 Create an advent calendar
 

@@ -1,5 +1,6 @@
 accordion-6-7138.h5p
 advanced-blanks-example-1-503253.h5p
+advanced-fill-the-blanks-41-1026350.h5p
 advent-blue-snowman-1075566.h5p
 agamotto-80158.h5p
 arithmetic-quiz-22-57860.h5p
@@ -35,6 +36,7 @@ image-juxtaposition-65047.h5p
 image-multiple-hotspot-question-65081.h5p
 image-sequencing-3-110117.h5p
 image-slider-2-130336.h5p
+impressive-presentation-7141.h5p
 impressive-presentation-7141add.h5p
 interactive-video-2-618.h5p
 mark-the-words-2-1408.h5p
