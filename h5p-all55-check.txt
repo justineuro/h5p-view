@@ -97,7 +97,7 @@ Impressive Presentation (ALPHA) (impressive-presentation-7141.h5p)	???
 Create a slideshow with parallax effects
 
 Impressive Presentation (ALPHA) (impressive-presentation-7141add.h5p)
-*** Add FontAwesome-4.5 folder															???
+*** Add FontAwesome-4.5 folder															OKAY
 Create a slideshow with parallax effects
 
 Information Wall (berries-95-1349799.h5p)					OKAY
