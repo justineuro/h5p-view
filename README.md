@@ -34,7 +34,7 @@ This folder includes (among others):
 * [`h5p-view`](./h5p-view) or [`h5p-play`](./h5p-play) - a bash script to create/start the server for playing the H5P file.
 * [`dist`](./dist) - a folder (and very important resource) from the [h5p-standalone](https://github.com/tunapanda/h5p-standalone) distribution that contains the essential files that allow the H5P content to be rendered in a standalone HTML page (i.e., independent of a platform such as certain Learning Management Systems (LMSs)).  
 * [`h5p-all92-check.txt`](./h5p-all92-check.txt)- a checklist containing information regarding  
-  * the 92 H5P examples that are avaliable from [h5p.org's Examples and Downloads](https://h5p.org/content-types-and-applications) page as of 2024-February-26 and 
+  * the 92 H5P examples that are avaliable and may be *re-used* from [h5p.org's Examples and Downloads](https://h5p.org/content-types-and-applications) page as of 2024-February-26 and 
   * the success of this script in playing each of these 92 H5P examples. (Note that there are two versions of `Impressive Presentation`; one version has both the `FontAwesome-4.5` and `FontAwesome-4.3` folders. Also, the script fails on four H5Ps: `AR Scavenger`, `Audio Recorder`, `Dialog Cards`, and one example of `Game Map`.)
 * [`h5p-view-all`](./h5p-view-all) or [`h5p-play-all`](./h5p-play-all) - a bash script that allows you to view/play all the 93 H5P examples in this repository; simply use `Ctrl-C` at the command line to end the current example and restart the server for the next H5P example in this directory.  
 ![](./h5p-play-all-shot.png)
