@@ -31,7 +31,7 @@ Use `Ctrl-C` to stop the server; the script consequently removes the temporary f
 ## Contents of this repositoty
 This folder includes (among others):
   
-* [`h5p-view`](./h5p-view) or [`h5p-play`](./h5p-play) - a bash script to start create the server for playing the H5P file.
+* [`h5p-view`](./h5p-view) or [`h5p-play`](./h5p-play) - a bash script to create/start the server for playing the H5P file.
 * [`dist`](./dist) - a folder (and very important resource) from the [h5p-standalone](https://github.com/tunapanda/h5p-standalone) distribution that contains the essential files that allow the H5P content to be rendered in a standalone HTML page (i.e., independent of a platform such as certain Learning Management Systems (LMSs)).  
 * [`h5p-all92-check.txt`](./h5p-all92-check.txt)- a checklist containing information regarding  
   * the 92 H5P examples that are avaliable from [h5p.org's Examples and Downloads](https://h5p.org/content-types-and-applications) page as of 2024-February-26 and 
