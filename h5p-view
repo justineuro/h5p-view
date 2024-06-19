@@ -18,10 +18,10 @@
 #								which is an essential need for this script to work.
 #
 #      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#     VERSION:	0.0.0
+#     VERSION:	0.0.1
 #     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #     CREATED:	2023/03/25 13:33:55
-#    REVISION:	
+#    REVISION:	2024/06/19 18:49:04
 #==================================================================================
 
 # parse through the issued command to get 
