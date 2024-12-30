@@ -1,4 +1,4 @@
-**(Before using this bash script, note that a convenient way to view H5Ps is probably by using a free H5P viewer/editor app such as [Lumi](https://app.lumi.education/).)**
+**(Before using this bash script, note that a convenient way to view H5Ps is probably by using a free H5P viewer/editor app such as [Lumi](https://lumi.education/en/).)**
 
 # h5p-view  
 [h5p-view](https://github.com/justineuro/h5p-view) is a bash script that processes (through a linux command line), for viewing/playing, [H5P](https://h5p.org/getting-started) zipped files by implementing [h5p-standalone](https://github.com/tunapanda/h5p-standalone).  
