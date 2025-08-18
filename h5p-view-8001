@@ -59,7 +59,7 @@ cat > index.html << EOT
 <script type="text/javascript">
 const el = document.getElementById('h5p-container');
 const options = {
-	h5pJsonPath:  './h5p',
+	h5pJsonPath:  'h5p',
 	frameJs: 'dist/frame.bundle.js',
 	frameCss: 'dist/styles/h5p.css',
 	customJs: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-AMS-MML_HTMLorMML',
@@ -68,10 +68,10 @@ new H5PStandalone.H5P(el, options);
 </script>
 EOT
 
-# start server at 0.0.0.0:8000 either using PHP or Python
+# start server at 0.0.0.0:8000 either using PHP or Python (:8001)
 case $SERVER in
 python) 
-	python -m http.server;;
+	python -m http.server 8001;;
 php) 
 	php -S 0.0.0.0:8000;;
 esac
