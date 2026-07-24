@@ -5,10 +5,10 @@
 This bash script 
 
 * needs a `-f` option to indicate the H5P filename to be viewed/played;
-* needs a `-s` option to indicate whether php or python is used for running the server (python or php); and 
+* needs a `-s` option to indicate whether a PHP or Python interpreter is used for running the server; and 
 * creates a temporary folder (`/tmp/h5ptemp`), as a server root directory from which it is run.
 
-(The server is started either as `php -S 0.0.0.0:8000` or `python -m http.server`.)  
+(The `h5p-view` script may start the server as `php -S 0.0.0.0:8000` or `python -m http.server`.  A versioned python or php interpreter may also be used, e.g., `php8.4 -S 0.0.0.0:8000`, `python3.12 -m http.server`.)  
 
 ## Instructions on use
 To use,
@@ -16,8 +16,9 @@ To use,
 * Clone this repository: `git clone https://github.com/justineuro/h5p-view.git`
 * At a Linux command line within your `h5p-view` directory issue the command:
 ```sh
-./h5p-view -f <name-of-H5P-file> -s <server starter: python or php>
+./h5p-view -f <name-of-H5P-file> -s <server starter: python or php interpreter>
 ```
+(A versioned interpreter may be passed at the command line, e.g., `-s python3.12` or `-s php8.4`.)
 * Point your browser at `http://0.0.0.0:8000` to play the H5P.
 
 For example, to view/play the [H5P Quiz (Question Set) example](https://h5p.org/question-set) from the [Examples and Downloads](https://h5p.org/content-types-and-applications) page at [https://h5p.org](https://h5p.org) and use `python -m http.server` to start the server:
@@ -32,7 +33,7 @@ Use `Ctrl-C` to stop the server; the script consequently removes the temporary f
 This folder includes (among others):
   
 * [`h5p-view`](./h5p-view) or [`h5p-play`](./h5p-play) - a bash script to create/start the server for playing the H5P file.
-* [`dist`](./dist) - a folder (and very important resource) from the [h5p-standalone v.3.8.0](https://github.com/tunapanda/h5p-standalone) distribution that contains the essential files that allow the H5P content to be rendered in a standalone HTML page (i.e., independent of a platform such as certain Learning Management Systems (LMSs)).  
+* [`dist`](./dist) - a folder (and very important resource) from the [h5p-standalone v.3.8.2](https://github.com/tunapanda/h5p-standalone) distribution that contains the essential files that allow the H5P content to be rendered in a standalone HTML page (i.e., independent of a platform such as certain Learning Management Systems (LMSs)).  
 * [`h5p-all92-check.txt`](./h5p-all92-check.txt)- a checklist containing information regarding:  
 
       a) the 92 H5P examples (of the 54 different types of H5Ps) that are available and may be *re-used* from [h5p.org's Examples and Downloads](https://h5p.org/content-types-and-applications) page as of 2024-February-26 and  

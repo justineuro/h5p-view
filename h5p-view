@@ -6,22 +6,25 @@
 #					USAGE:	h5p-view -f <h5p-FILEname> -s <SERVER initiator: python or php>
 #		
 #						Example:	e.g. h5p-view -f question-set-616.h5p -s php
+#											e.g. h5p-view -f question-set-616.h5p -s php8.3
+#											e.g. h5p-view -f question-set-616.h5p -s myphp
 #											e.g. h5p-view -f question-set-616.h5p -s python
+#											e.g. h5p-view -f question-set-616.h5p -s python3.2
 #
 # DESCRIPTION:	Used as an H5P file player/viewer at a linux command line.  
 #								After the command is issued, a temporary directory 
 #								(/tmp/h5ptemp/h5p) is created and a server is started 
 #								(using either python or php) at port 8000.  The  temporary 
-#               folder created serves as the root directory for the server. 
+#								folder created serves as the root directory for the server. 
 #								Ctrl-C stops the server and erases the temporary files.
 #								This uses h5p-standalone (by https://github.com/tunapanda) 
 #								which is an essential need for this script to work.
 #
-#      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#     VERSION:	0.0.2
-#     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
-#     CREATED:	2023/03/25 13:33:55
-#    REVISION:	2025/08/18 18:47:10
+#			 AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
+#			VERSION:	0.0.3
+#			LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
+#			CREATED:	2023/03/25 13:33:55
+#		 REVISION:	2026/07/24 09:50:31
 #==================================================================================
 
 # parse through the issued command to get 
@@ -62,19 +65,39 @@ const options = {
 	h5pJsonPath:  './h5p',
 	frameJs: 'dist/frame.bundle.js',
 	frameCss: 'dist/styles/h5p.css',
-	customJs: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-AMS-MML_HTMLorMML',
+	customJs: 'https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js',
 }
 new H5PStandalone.H5P(el, options);
 </script>
 EOT
 
+# The modification for the server starter codes below was based on a 
+# suggestion by @aretaon (Julian Bender) to allow flexibility and 
+# portability with regards to interpreters (the server starter 
+# may now be started by versioned interpreters, e.g., python3.2, php8.4, 
+# or renamed interpreters, e.g., myphp.  The codes were further refined 
+# for clarity and safetty with the assistance of Microsoft Copilot.
+#  
 # start server at 0.0.0.0:8000 either using PHP or Python
-case $SERVER in
-python) 
-	python -m http.server;;
-php) 
-	php -S 0.0.0.0:8000;;
+# check that a server option was passed at the command line
+if [[ -z "$SERVER" ]]; then
+	echo "Please set an interpreter option, e.g. php, php8.3, python, python3.2, using the -s option"
+	exit 1
+fi
+# start server	
+case "$SERVER" in
+*python*) 
+	"$SERVER" -m http.server 8000 --bind 0.0.0.0
+	;;
+*php*) 
+	"$SERVER" -S 0.0.0.0:8000
+	;;
+*)
+	echo "Unsupported interpreter type: $SERVER"
+	exit 1
+	;;
 esac
+
 
 # Pless Ctrl-C at the linux terminal in which the server is run 
 # to stop the server
