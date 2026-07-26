@@ -9,4 +9,5 @@
 
 This change was suggested by an [Issue](https://github.com/justineuro/h5p-view/issues/1#issue-4958621464) raised by [@aretaon](https://github.com/aretaon) and refined with the assistance of [Microsoft Copilot](copilot.microsoft.com).
 
-
+## v0.0.4 (2026-07-26)
+* Change the link of the `Mathjax 4` source to make it non-version specific.

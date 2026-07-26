@@ -43,4 +43,7 @@ This folder includes (among others):
 * [`h5p-view-all`](./h5p-view-all) or [`h5p-play-all`](./h5p-play-all) - a bash script that allows you to view/play all the 93 H5P examples in this repository; simply use `Ctrl-C` at the command line to end the current example and restart the server for the next H5P example in this directory.  
 ![](./h5p-play-all-shot.png)
 
+### MathJax use
+[`MathJax version 4`](https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js) is used to render the `TeX/LaTeX` codes included in the `H5P`s in this repositoty. 
+
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">h5p-view</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/justineuro/" property="cc:attributionName" rel="cc:attributionURL">Justine Leon A. Uro</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/justineuro/h5p-view" rel="dct:source">https://github.com/justineuro/h5p-view</a>.

@@ -21,10 +21,10 @@
 #								which is an essential need for this script to work.
 #
 #			 AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#			VERSION:	0.0.3
+#			VERSION:	0.0.4
 #			LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #			CREATED:	2023/03/25 13:33:55
-#		 REVISION:	2026/07/24 09:50:31
+#		 REVISION:	2026/07/26 19:27:03
 #==================================================================================
 
 # parse through the issued command to get 
@@ -65,7 +65,7 @@ const options = {
 	h5pJsonPath:  './h5p',
 	frameJs: 'dist/frame.bundle.js',
 	frameCss: 'dist/styles/h5p.css',
-	customJs: 'https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js',
+	customJs: 'https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js',
 }
 new H5PStandalone.H5P(el, options);
 </script>
